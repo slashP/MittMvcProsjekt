@@ -23,7 +23,7 @@ namespace MittMvcProsjekt
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            Database.SetInitializer(new DropCreateDatabaseAlways<DataContext>());
+            //Database.SetInitializer(new DropCreateDatabaseAlways<DataContext>());
         }
     }
 }
