@@ -1,0 +1,33 @@
+@model MittMvcProsjekt.Models.Tidsskrift
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+	<legend>Tidsskrift</legend>
+	<dl>
+		<dt>
+			@Html.DisplayNameFor(model => model.Tittel)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Tittel)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Kategori.Type)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Kategori.Type)
+		</dd>
+
+	</dl>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

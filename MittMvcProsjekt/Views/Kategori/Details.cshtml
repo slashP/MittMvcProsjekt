@@ -1,0 +1,25 @@
+@model MittMvcProsjekt.Models.Kategori
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+	<legend>Kategori</legend>
+	<dl>
+		<dt>
+			@Html.DisplayNameFor(model => model.Type)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Type)
+		</dd>
+
+	</dl>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
