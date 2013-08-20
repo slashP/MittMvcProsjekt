@@ -9,7 +9,7 @@ namespace MittMvcProsjekt.Models
     public class DataContext : DbContext
     {
         public DataContext()
-            : base("DefaultConnection")
+            : base("DataContext")
         {
         }
 
