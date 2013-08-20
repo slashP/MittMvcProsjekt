@@ -17,8 +17,6 @@ namespace MittMvcProsjekt.Controllers
         // GET: /Kategori/
         public ActionResult Index()
         {
-            ViewBag.FirstCategory = db.Kategori.First();
-
             return View(db.Kategori.ToList());
         }
 
